@@ -1,0 +1,96 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="charset=utf-8">
+	<link rel="stylesheet" type="text/css" href="style.css">
+<title>Exposure calculator</title>
+</head>
+<body>
+	<div class='calc'>
+		<h1>Exposure calculator</h1>
+		<form>
+			Sensitive:<br>
+			<input id='s100' name='sensitive' type='radio' value='100'>
+			<label for='s100'>ISO 100</label><br>
+			<input id='s200' name='sensitive' type='radio' value='200'>
+			<label for='s200'>ISO 200</label><br>
+			<input id='s400' name='sensitive' type='radio' value='400'>
+			<label for='s400'>ISO 400</label><br>
+			<input id='s800' name='sensitive' type='radio' value='800'>
+			<label for='s800'>ISO 800</label><br>
+
+			<p>Scene:<br>
+			<select id='scene' name='scene'>
+				<optgroup label='Пейзаж'>
+					<option value='0'>Небо в светлых облаках</option>
+					<option value='0'>Водная поверхность</option>
+					<option value='2'>Берег больших водоемов</option>
+					<option value='3'>Песчаный берег средним планом</option>
+					<option value='1'>Вода, снег без переднего плана</option>
+					<option value='4'>Вода, снег с передним планом</option>
+					<option value='3'>Пейзаж летний без переднего плана</option>
+					<option value='5'>Пейзаж летний, светлый пер. план</option>
+					<option value='8'>Пейзаж летний, темный пер. план</option>
+					<option value='10'>Лес</option>
+				</optgroup>
+				<optgroup label='Город'>
+					<option value='4'>Площадь, стадион</option>
+					<option value='5'>Улица широкая</option>
+					<option value='8'>Улица темная, затененная</option>
+					<option value='3'>Здание белое</option>
+					<option value='4'>Здание светлое</option>
+					<option value='6'>Здание среднее по тону окраски</option>
+					<option value='8'>Здание темное</option>
+				</optgroup>
+				<optgroup label='Портрет, группа, предмет'>
+					<option value='6'>На солнце</option>
+					<option value='8'>На открытом месте</option>
+					<option value='10'>под редкими деревьями</option>
+					<option value='13'>под густыми деревьями</option>
+					<option value='11'>в комнате у окна</option>
+					<option value='13'>в комнате 1м от окна</option>
+					<option value='17'>в комнате 2м от окна</option>
+					<option value='19'>в комнате 3м от окна</option>
+				</optgroup>
+				<optgroup label='Интерьер'>
+					<option value='22'>Светлая окраска, большие окна</option>
+					<option value='26'>Светлая окраска, малые окна</option>
+					<option value='24'>Средняя по тону, большие окна</option>
+					<option value='28'>Средняя по тону, малые окна</option>
+					<option value='26'>Темная по тону, большие окна</option>
+					<option value='30'>Темная по тону, малые окна</option>
+				</optgroup>
+			</select></p>
+
+			<p>Weather:<br>
+			<select id='weather' name='weather'>
+				<option value='1'>Безоблачно</option>
+				<option value='0'>Белые облака</option>
+				<option value='2'>Слегка облачно</option>
+				<option value='3'>Средне облачно</option>
+				<option value='5'>Сильно облачно</option>
+				<option value='7'>Густые облака</option>
+			</select></p>
+
+			<p>Aperture:<br>
+			<select id='aperture' name='aperture' >
+				<option value='2'>2</option>
+				<option value='4'>2.8</option>
+				<option value='6'>4</option>
+				<option value='8'>5.6</option>
+				<option value='10'>8</option>
+				<option value='12'>11</option>
+				<option value='14'>16</option>
+				<option value='16'>22</option>
+			</select></p>
+
+			<!--Shutter:<br>
+			<input id='shutter' name='shutter' type='range' min='0' max='10' step='1'><br>-->
+			</form>
+			<p id='pResult'>Shutter: <label id='result' for='button'>please choose your option</label></p>
+	</div>
+	
+<script src="exp.js"></script>
+
+</body>
+</html>

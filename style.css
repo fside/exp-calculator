@@ -1,0 +1,47 @@
+body {
+		background-color: #303030;
+		font-variant: small-caps;
+    width: 100%;
+	}
+
+	h1 {
+		color: #aceeaa;
+		text-align: center;
+	}
+
+	#result {
+		color: #eded70;
+		font-size: 15pt;
+	}
+
+	#pResult {
+		font-size: 14pt;
+		font-variant: small-caps;
+	}
+
+	select {
+		max-width: 100%;
+	}
+
+	div.calc {
+		text-align: center;
+		color: #bbbbbb;
+		background-color: #292926;
+		border-color: #505050;
+		border-style: double;
+		border-radius: 10px;
+		min-width: 240px;
+		max-width: 350px;
+		margin-top: 20px;
+		margin-left: auto;
+    margin-right: auto;
+		min-height: 350px;
+	}
+
+	@media (max-width: 320px) {
+		div.calc {
+			margin-top: 0px;
+			margin-left: 0px;
+			padding: 0px;
+		}
+	}
