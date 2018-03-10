@@ -1,4 +1,4 @@
-var expObj = {
+var expObj = { 
 	takeSensitive: function() {
 		expObj.s100 = document.getElementById('s100').checked;
 		expObj.s200 = document.getElementById('s200').checked;
@@ -55,7 +55,7 @@ var expObj = {
 	},
 	convertShutter: function() {
 		if (expObj.s == 'err') {
-			expObj.shutter = 'Сейчас слишком темно!:(';
+			expObj.shutter = 'Солнце ушло спать!:(';
 		} else if ((+expObj.s) < 24) {
 			expObj.shutter = 'Прикройте диафрагму';
 		} else if ((+expObj.s) > 46) {
